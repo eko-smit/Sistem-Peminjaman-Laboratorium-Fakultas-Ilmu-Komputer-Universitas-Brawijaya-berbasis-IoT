@@ -57,7 +57,7 @@ IN1	  IO12
 
 GND	  GND
 
-Preview Aplikasi
+#Preview Aplikasi
 
 ![Apps(1)](https://user-images.githubusercontent.com/105602352/168486726-acb8fb5a-8178-4e60-b8c7-61d64e5174ff.jpg)
 ![Apps(2)](https://user-images.githubusercontent.com/105602352/168486722-e47858ba-66e9-471d-b385-d037dfe7ef28.jpg)
