@@ -2,6 +2,7 @@
 Peminjaman laboratorium / ruang adalah kegiatan yang dilakukan oleh manusia untuk menggunakan sebuah ruangan / laboratorium pada jadwal tertentu dan membutuhkan pendataan secara administratif. Sistem yang dipergunakan pada peminjaman laboratorium menggunakan Kode QR yang disediakan oleh aplikasi. Penggunaan Kode QR dilakukan saat peminjam ingin memasuki laboratorium, sesuai jadwal yang ditentukan dan dikonfirmasi dengan ESP-32Cam yang mengatur kendali penguncian solenoid pada pintu laboratorium. Sebelum mengatur kendali penguncian Solenoid, ESP-32Cam menghubungi Firebase untuk mencocokkan Kode QR peminjam yang berisi nama, nim dan detail tanggal peminjaman yang sudah dienkripsi. Aplikasi peminjaman sudah dilengkapi dengan menampilkan jadwal yang tersedia pada tiap laboratorium, dikembangkan menggunakan Kodular. Sehingga aplikasi ini mudah sekali untuk berinteraksi dengan Firebase. Firebase sendiri berfungsi sebagai database yang dipergunakan sebagai penyimpanan data untuk sistem yang telah dibuat. Sistem yang dibuat mampu bekerja sesuai fungsinya, yaitu membantu peminjaman dan berkomunikasi antar fitur yang berhubungan dengan sistem peminjaman laboratorium berbasis IoT.
 
 #Konfigurasi PIN Camera OV2640 -> ESP32CAM
+
 D0          GPIO 5
 D1          GPIO 18
 D2          GPIO 19
@@ -19,16 +20,19 @@ SCL       	GPIO 27
 Power Pin	  GPIO 32
 
 #Konfigurasi PIN FTDI232RL -> ESP32CAM
+
 VCC	  5V
 Tx	  U0R
 Rx	  U0T
 GND	  GND
 
 #Konfigurasi PIN Buzzer -> ESP32CAM
+
 Data	  IO2
 GND 	  GND
 
 #Konfigurasi PIN Relay -> ESP32CAM
+
 VCC	  3V3
 IN1	  IO12
 GND	  GND
